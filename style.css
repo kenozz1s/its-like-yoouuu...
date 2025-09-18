@@ -1,0 +1,161 @@
+body { /* тело сайта */
+  margin: 0;
+  background: linear-gradient(#432418, #4a1d17); /* градиент и фон */
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+  color: #efeae5; /* текст */
+  line-height: 1.6;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+header { /* заголовок сайта */
+  width: 100%;
+  background: linear-gradient(to right, #270b109d, #391214 30%, #4f1b1a75);
+  padding: 32px 0 24px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+header h1 { /* название кофейни */
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: #31231d 2px 2px 2px;
+  color: #d0c4c1;
+  letter-spacing: 2px;
+}
+
+ header p { /* цитата под названием */
+  font-size: 18px;
+  font-style: italic;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  color: #d0c4c1; /* светлый бордо-розовый акцент */
+}
+
+h2 { /* заголовок раздела (Бар, Контакты и т.д.) */
+  background-color: #41141084;
+  box-shadow: 0 5px 9px rgba(0,0,0,0.25);
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #e1ccc1; /* тёплый светлый */
+}
+
+.menu-row { /* строка с карточками меню */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* две равные колонки */
+  gap: 32px;
+  margin-bottom: 40px;
+  width: 100%;
+  padding-left: 35px;           /* Небольшой отступ слева */
+  padding-right: 35px;          /* Небольшой отступ справа */
+  box-sizing: border-box;
+}
+
+.card { /* карточка меню (Кофе, Чай и т.д.) */
+  background: #2f2220;
+  border-radius: 16px;
+  border: solid 2px #ab7f72c6;
+  box-shadow: 0 5px 9px rgba(0,0,0,0.25);
+  padding: 32px 48px;      /* увеличенный внутренний отступ */
+  min-width: 420px;        /* увеличенная минимальная ширина */
+  max-width: 640px;        /* увеличенная максимальная ширина */
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card h3 { /* заголовок внутри карточки */
+  text-align: center;
+  margin-bottom: 15px;
+  color: #c4a798;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card ul { /* список внутри карточки */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li { /* пункт меню в карточке */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #5a3c33;
+  padding: 10px 0;
+}
+
+.card li b { /* название напитка */
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+  color: #ddd0c5;
+}
+
+.card li .size { /* объём напитка */
+  flex: 1;
+  text-align: center;
+  color: #d2c0b5;
+}
+
+.card li span:not(.size) { /* цена напитка */
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+  color: #e6c8bf; /* акцент */
+}
+
+.gallery { /* галерея напитков */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title { /* заголовок галереи с линией */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #e1ccc1;
+}
+
+.gallery-images { /* контейнер для изображений */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.gallery-images img { /* изображения в галерее */
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 5px 9px rgba(0,0,0,0.25);
+  object-fit: cover;
+}
+
+.contacts { /* блок контактов */
+  text-align: center;
+  padding: 32px 0;
+  margin-top: 40px;
+  box-shadow: 0 5px 9px rgba(0,0,0,0.25);
+}
+
+.contacts h2 { /* заголовок контактов */
+  color: #ecd2c5;
+}
+
+.contacts a { /* ссылка */
+  color: #b68b7e;
+  text-decoration: underline;
+  font-weight: bold;
+}
